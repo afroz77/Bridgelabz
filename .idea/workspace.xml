@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dae9675f-8631-4deb-8bf4-c3b763c0e5b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week3/Inventory_Data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/Inventory_Data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/Regex.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/StockReport.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/StockReport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/oop_util.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/AddressBook/AddressBook.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/AddressBook/Services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/StockReportReadJSON.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../programs/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../programs/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../programs/.idea/programs.iml" afterDir="false" />
@@ -34,9 +31,12 @@
       <change afterPath="$PROJECT_DIR$/../sample/venv/bin/python3.6" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sample/venv/lib64" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../sample/venv/pyvenv.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week2/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week2/numberlist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Week2/numberlist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/StockReport.json" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/StockReport.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/StockReport.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/StockReport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/dsutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/dsutil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/oop_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/oop_util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,51 +45,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week3/Regex.py">
+        <entry file="file://$PROJECT_DIR$/Week3/AddressBook/AddressBook.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="60">
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week3/AddressBook/asd.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Week3/AddressBook/Services.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="99" column="23" lean-forward="true" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1558615738743" expanded="true" signature="3143:3151" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week3/StockReport.py">
+        <entry file="file://$PROJECT_DIR$/Week2/HashTable.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util/oop_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week3/StockReport.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="169" selection-start-column="169" selection-end-column="169" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week3/Inventory_Data.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="22" lean-forward="true" selection-end-line="27" />
+            <state relative-caret-position="90">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -121,7 +113,6 @@
         <option value="$PROJECT_DIR$/Week2/BalanceParanthesis.py" />
         <option value="$PROJECT_DIR$/Week2/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/Week1/Util.py" />
-        <option value="$PROJECT_DIR$/util/dsutil.py" />
         <option value="$PROJECT_DIR$/util/Queue.py" />
         <option value="$PROJECT_DIR$/Week2/Calender_Queue.py" />
         <option value="$PROJECT_DIR$/Week2/Calender.py" />
@@ -132,9 +123,14 @@
         <option value="$PROJECT_DIR$/Week3/Inventory_Data.json" />
         <option value="$PROJECT_DIR$/Week3/Inventory_Data.py" />
         <option value="$PROJECT_DIR$/Week3/Regex.py" />
-        <option value="$PROJECT_DIR$/Week3/StockReport.py" />
         <option value="$PROJECT_DIR$/Week3/StockReport.json" />
+        <option value="$PROJECT_DIR$/util/dsutil.py" />
         <option value="$PROJECT_DIR$/util/oop_util.py" />
+        <option value="$PROJECT_DIR$/Week3/StockReport.py" />
+        <option value="$PROJECT_DIR$/Week3/StockReportReadJSON.py" />
+        <option value="$PROJECT_DIR$/Week3/AddressBook/AddressBook.py" />
+        <option value="$PROJECT_DIR$/Week3/AddressBook/asd.json" />
+        <option value="$PROJECT_DIR$/Week3/AddressBook/Services.py" />
       </list>
     </option>
   </component>
@@ -150,6 +146,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,11 +159,16 @@
               <item name="BridgeLab" type="462c0819:PsiDirectoryNode" />
               <item name="Week3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BridgeLab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BridgeLab" type="462c0819:PsiDirectoryNode" />
+              <item name="Week3" type="462c0819:PsiDirectoryNode" />
+              <item name="AddressBook" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,8 +187,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.StockReport">
-    <configuration name="Inventory_Data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.AddressBook">
+    <configuration name="AddressBook" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BridgeLab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,11 +196,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week3/AddressBook" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/Inventory_Data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/AddressBook/AddressBook.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,7 +209,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Regex" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="HashTable" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BridgeLab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -215,11 +217,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/Regex.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week2/HashTable.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,7 +251,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="StockReportReadJSON" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BridgeLab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/StockReportReadJSON.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="orderedlist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BridgeLab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,28 +284,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week2/Test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="oop_util" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BridgeLab" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/oop_util.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week2/orderedlist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -293,11 +295,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AddressBook" />
+        <item itemvalue="Python.HashTable" />
+        <item itemvalue="Python.StockReportReadJSON" />
         <item itemvalue="Python.StockReport" />
-        <item itemvalue="Python.oop_util" />
-        <item itemvalue="Python.Inventory_Data" />
-        <item itemvalue="Python.Regex" />
-        <item itemvalue="Python.Test" />
+        <item itemvalue="Python.orderedlist" />
       </list>
     </recent_temporary>
   </component>
@@ -412,44 +414,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/HashTable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/numberlist.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/orderedlist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Week2/BalanceParanthesis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/dsutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="242" column="50" selection-start-line="242" selection-start-column="50" selection-end-line="242" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -471,13 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/Calender_Queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -519,25 +480,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Inventory.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Inventory.json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Inventory.json" />
+    <entry file="file://$PROJECT_DIR$/Week3/Inventory.json.py" />
     <entry file="file://$PROJECT_DIR$/../programs/BridgeLabz/Oops/inventory_items.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Inventory_Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file:///usr/lib/python3.6/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -563,24 +509,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/StockReport.json">
+    <entry file="file://$PROJECT_DIR$/../programs/BridgeLabz/Oops/stock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="169" selection-start-column="169" selection-end-column="169" />
+        <state relative-caret-position="165">
+          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/StockReport.py">
+    <entry file="file://$PROJECT_DIR$/Week2/Calender_Queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week2/orderedlist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week2/numberlist.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Inventory_Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/oop_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="195">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/StockReport.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="92" selection-start-column="92" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/StockReport.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/StockReportReadJSON.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/asd.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/as.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/dsutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="148" column="43" selection-start-line="148" selection-start-column="43" selection-end-line="148" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week2/HashTable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/AddressBook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/asd.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/Services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="99" column="23" lean-forward="true" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1558615738743" expanded="true" signature="3143:3151" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

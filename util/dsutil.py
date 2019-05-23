@@ -35,7 +35,7 @@ def updatestack(data):
 
 
 def readfile(filename):
-    with open(filename,'r') as File:     # Open File As test.txt
+    with open(filename, 'r') as File:     # Open File As test.txt
         lst = File.read().split()      # Read File And Store In List
         File.close()
     return lst
@@ -258,9 +258,12 @@ class Calender:
                     queue.enqueue(date)              # else store than date in Queue position
                     date += 1                        # update the date
 
-        for i in range(6):                           # print the calender in formatted output
-            for j in range(7):
-                if queue.Size() > 0:
-                    x = int(queue.dequeue())
-                    print(str(x).ljust(2), end='    ')
+        try:
+            for i in range(6):  # print the calender in formatted output
+                for j in range(7):
+                    if queue.Size() >= 0:
+                        x = int(queue.dequeue())
+                        print(str(x).ljust(2), end='    ')
+                print()
+        except:
             print()
