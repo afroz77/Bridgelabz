@@ -1,1 +1,32 @@
-null
+{
+  "data": [
+    {
+      "first_name": "afroz",
+      "last_name": "khan",
+      "mobile_number": "8626023212",
+      "address": "abad",
+      "city": "abad",
+      "state": "mh",
+      "zip_code": "4310001"
+    },
+    {
+      "first_name": "bfroz",
+      "last_name": "khan",
+      "mobile_number": "8626023212",
+      "address": "abad",
+      "city": "abad",
+      "state": "mh",
+      "zip_code": "4310001"
+    },
+    {
+      "first_name": "cfroz",
+      "last_name": "khan",
+      "mobile_number": "8626023212",
+      "address": "abad",
+      "city": "abad",
+      "state": "mh",
+      "zip_code": "4310001"
+    }
+  ]
+
+}

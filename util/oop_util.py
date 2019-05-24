@@ -1,5 +1,7 @@
 import json
-
+import itertools
+import random
+import numpy
 
 class Stock:
     def __init__(self):
@@ -10,7 +12,7 @@ class Stock:
 
             for i in file_data:
                 self.ls.append(i)
-        except :
+        except FileNotFoundError:
             print("No Shares Report Available Add New Shares ")
 
     def addnew(self):
@@ -41,4 +43,27 @@ class Stock:
         count = 0
         for i in self.ls:
             count += 1
-            print(count,"\t ", i['share_name'],'\t   ',i['share_price'],'\t ', i['no_of_shares'],'\t\t   ', i['total_shares'])
+            print(count, "\t ", i['share_name'], '\t   ', i['share_price'], '\t ',
+                  i['no_of_shares'], '\t\t   ', i['total_shares'])
+
+
+class Cards:
+
+    def __init__(self):
+        self.rank = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
+        self.suits = ['Spades', 'Clubs', 'Hearts', 'Diamonds']
+        self.deck = list(itertools.product(self.rank, self.suits))
+
+    def DistributeCard(self):
+        count = 0
+        for players in range(1, 5):
+            random.shuffle(self.deck)
+            print("")
+            print("Player", players, "Got 9 Cards\n")
+            for i in range(1, 10):
+                print(self.deck[i][0], "Of", self.deck[i][1])
+            count += 1
+        self.deck.pop(i)
+
+
+
