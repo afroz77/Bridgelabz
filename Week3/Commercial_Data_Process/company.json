@@ -1,0 +1,28 @@
+{
+  "company": {
+    "GOOGLE": {
+      "name": "Google",
+      "balance": 20000,
+      "shares": 200,
+      "price": 140
+    },
+    "AMAZON": {
+      "name": "Amazon",
+      "balance": 39800,
+      "shares": 460,
+      "price": 100
+    },
+    "TCS": {
+      "name": "TCS LTD",
+      "balance": 40000,
+      "shares": 450,
+      "price": 170
+    },
+    "HCL": {
+      "name": "HCL LTD",
+      "balance": 40000,
+      "shares": 450,
+      "price": 150
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Customers": [
+    {
+      "customer_id": 1,
+      "customer_name" : "Afroz Khan",
+      "total_bal": 2000,
+      "total_shares": 20
+    }
+  ],
+
+  "Company": [
+    {
+      "company_id": 1,
+      "company_name": "GOOGLE",
+      "total_bal": 20000,
+      "total_shares": 200
+    }
+  ]
+}
