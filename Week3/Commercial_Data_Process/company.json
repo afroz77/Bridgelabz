@@ -4,25 +4,29 @@
       "name": "Google",
       "balance": 20000,
       "shares": 200,
-      "price": 140
+      "price": 140,
+      "symbol": ""
     },
     "AMAZON": {
       "name": "Amazon",
-      "balance": 39800,
-      "shares": 460,
-      "price": 100
+      "balance": 40000,
+      "shares": 458,
+      "price": 100,
+      "symbol": ""
     },
     "TCS": {
       "name": "TCS LTD",
-      "balance": 40000,
+      "balance": 41500,
       "shares": 450,
-      "price": 170
+      "price": 170,
+      "symbol": "sdd"
     },
     "HCL": {
       "name": "HCL LTD",
-      "balance": 40000,
-      "shares": 450,
-      "price": 150
+      "balance": 40300,
+      "shares": 448,
+      "price": 150,
+      "symbol": ""
     }
   }
 }

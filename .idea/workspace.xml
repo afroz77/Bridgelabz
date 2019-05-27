@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dae9675f-8631-4deb-8bf4-c3b763c0e5b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/File_Load.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/Services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/company.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/customer.json" afterDir="false" />
+    <list default="true" id="dae9675f-8631-4deb-8bf4-c3b763c0e5b4" name="Default Changelist" comment="k">
+      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/Company.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/CompanyShareLinkedList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/TransactionWithQueue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/Transaction_Queue.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/companylinkedlist.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../programs/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../programs/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../programs/.idea/programs.iml" afterDir="false" />
@@ -36,8 +35,12 @@
       <change afterPath="$PROJECT_DIR$/../sample/venv/pyvenv.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Week3/AddressBook/asd.json" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/AddressBook/asd.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/AddressBook/new.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/AddressBook/temp.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/Commercial_Data_Process/Services.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/Services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/Commercial_Data_Process/company.json" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/company.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/Commercial_Data_Process/customer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/Commercial_Data_Process/customer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/Regex.py" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/Regex.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/LinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/LinkedList.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,17 +53,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="75">
+              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/Services.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="271" column="66" lean-forward="true" selection-start-line="271" selection-start-column="66" selection-end-line="271" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/Services.py">
+        <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/TransactionWithQueue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="367">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -69,28 +81,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/File_Load.py">
+        <entry file="file://$PROJECT_DIR$/util/Queue.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="135">
+              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/customer.json">
+        <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/Transaction_Queue.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+            <state>
+              <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/company.json">
+        <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Week3/Regex.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/LinkedList.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="136" column="27" lean-forward="true" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -120,14 +150,12 @@
         <option value="$PROJECT_DIR$/Week2/Prime2d.py" />
         <option value="$PROJECT_DIR$/Week2/unorderedlist.py" />
         <option value="$PROJECT_DIR$/Week2/AnagramStack.py" />
-        <option value="$PROJECT_DIR$/util/LinkedList.py" />
         <option value="$PROJECT_DIR$/Week2/numberlist.txt" />
         <option value="$PROJECT_DIR$/Week2/orderedlist.py" />
         <option value="$PROJECT_DIR$/util/Stack.py" />
         <option value="$PROJECT_DIR$/Week2/BalanceParanthesis.py" />
         <option value="$PROJECT_DIR$/Week2/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/Week1/Util.py" />
-        <option value="$PROJECT_DIR$/util/Queue.py" />
         <option value="$PROJECT_DIR$/Week2/Calender_Queue.py" />
         <option value="$PROJECT_DIR$/Week2/Calender.py" />
         <option value="$PROJECT_DIR$/Week2/Test.py" />
@@ -136,7 +164,6 @@
         <option value="$PROJECT_DIR$/Week3/Inventiry_Data.json" />
         <option value="$PROJECT_DIR$/Week3/Inventory_Data.json" />
         <option value="$PROJECT_DIR$/Week3/Inventory_Data.py" />
-        <option value="$PROJECT_DIR$/Week3/Regex.py" />
         <option value="$PROJECT_DIR$/Week3/StockReport.json" />
         <option value="$PROJECT_DIR$/util/dsutil.py" />
         <option value="$PROJECT_DIR$/Week3/StockReport.py" />
@@ -147,13 +174,22 @@
         <option value="$PROJECT_DIR$/Week3/AddressBook/new.json" />
         <option value="$PROJECT_DIR$/Week3/AddressBook/Services.py" />
         <option value="$PROJECT_DIR$/Week3/AddressBook/AddressBook.py" />
-        <option value="$PROJECT_DIR$/Week3/AddressBook/asd.json" />
         <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.json" />
-        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/company.json" />
-        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.py" />
         <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/File_Load.py" />
         <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/customer.json" />
+        <option value="$PROJECT_DIR$/Week3/AddressBook/asd.json" />
         <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/Services.py" />
+        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/company.json" />
+        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.py" />
+        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/tse.py" />
+        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/companylinkedlist.json" />
+        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/Company.json" />
+        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/CompanyShareLinkedList.py" />
+        <option value="$PROJECT_DIR$/Week3/Regex.py" />
+        <option value="$PROJECT_DIR$/util/LinkedList.py" />
+        <option value="$PROJECT_DIR$/util/Queue.py" />
+        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/Transaction_Queue.json" />
+        <option value="$PROJECT_DIR$/Week3/Commercial_Data_Process/TransactionWithQueue.py" />
       </list>
     </option>
   </component>
@@ -185,13 +221,13 @@
             <path>
               <item name="BridgeLab" type="b2602c69:ProjectViewProjectNode" />
               <item name="BridgeLab" type="462c0819:PsiDirectoryNode" />
-              <item name="Week1" type="462c0819:PsiDirectoryNode" />
-              <item name="Functional" type="462c0819:PsiDirectoryNode" />
+              <item name="Week3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BridgeLab" type="b2602c69:ProjectViewProjectNode" />
               <item name="BridgeLab" type="462c0819:PsiDirectoryNode" />
               <item name="Week3" type="462c0819:PsiDirectoryNode" />
+              <item name="Commercial_Data_Process" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -215,50 +251,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.StockAccount">
-    <configuration name="AddressBook" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BridgeLab" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week3/AddressBook" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/AddressBook/AddressBook.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="LeapYear" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="BridgeLab" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week1/Functional" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week1/Functional/LeapYear.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Services" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.TransactionWithQueue">
+    <configuration name="CompanyShareLinkedList" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BridgeLab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -270,7 +264,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/Commercial_Data_Process/Services.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/Commercial_Data_Process/CompanyShareLinkedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Queue" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BridgeLab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/Queue.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,7 +315,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TransactionWithQueue" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="BridgeLab" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -308,11 +323,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week3/Commercial_Data_Process" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dc.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/Commercial_Data_Process/TransactionWithQueue.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="BridgeLab" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Week3/Commercial_Data_Process" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Week3/Commercial_Data_Process/tse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -323,11 +359,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TransactionWithQueue" />
+        <item itemvalue="Python.Queue" />
+        <item itemvalue="Python.CompanyShareLinkedList" />
         <item itemvalue="Python.StockAccount" />
-        <item itemvalue="Python.Services" />
-        <item itemvalue="Python.LeapYear" />
-        <item itemvalue="Python.AddressBook" />
-        <item itemvalue="Python.dc" />
+        <item itemvalue="Python.tse" />
       </list>
     </recent_temporary>
   </component>
@@ -348,13 +384,14 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49514562" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" sideWeight="0.5048544" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4918033" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.5081967" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.048859935" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30456027" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -372,7 +409,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40716612" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30456027" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -386,76 +423,10 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.json" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Week2/TwoDAnagram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/unorderedlist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/AnagramQueue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/PalindromeChecker.py" />
-    <entry file="file://$PROJECT_DIR$/Week2/AnagramStack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/LinkedList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="127" column="25" lean-forward="true" selection-start-line="127" selection-start-column="25" selection-end-line="127" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/BalanceParanthesis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/Queue.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week2/Test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/Stack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -563,23 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Regex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/StockReport.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="92" selection-start-column="92" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Week3/StockReport.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -613,40 +567,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/Services.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="238" selection-start-line="238" selection-end-line="238" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/AddressBook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/temp.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/new.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/Customer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/temp.json" />
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/new.json" />
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/Customer.json" />
     <entry file="file://$PROJECT_DIR$/../programs/BridgeLabz/Oops/stock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -656,20 +579,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../programs/BridgeLabz/Oops/company.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/asd.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../programs/BridgeLabz/Oops/customer.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -681,41 +590,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/company.json">
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/AddressBook.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+        <state relative-caret-position="114">
+          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/File_Load.py">
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/asd.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/AddressBook/Services.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1629">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/customer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        <state relative-caret-position="225">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.py">
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/company.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="435">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/tse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/companylinkedlist.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../programs/BridgeLabz/Oops/transaction.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/CompanyShareLinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1396">
+          <caret line="100" column="29" lean-forward="true" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+          <folding>
+            <element signature="e#1#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/File_Load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/Company.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Regex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/StockReport.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="92" selection-start-column="92" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/LinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="136" column="27" lean-forward="true" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/Services.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="238">
+          <caret line="271" column="66" lean-forward="true" selection-start-line="271" selection-start-column="66" selection-end-line="271" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/StockAccount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Queue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/TransactionWithQueue.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Week3/Commercial_Data_Process/Transaction_Queue.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>

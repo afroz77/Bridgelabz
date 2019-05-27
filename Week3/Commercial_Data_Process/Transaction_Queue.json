@@ -1,0 +1,11 @@
+[
+  {
+    "transaction_type": "Sell",
+    "company_name": "Google",
+    "customer_name": "Afroz",
+    "no_of_share": 10,
+    "total_amount": 200,
+    "time": "27/05/2019, 18:20:35"
+  }
+
+]

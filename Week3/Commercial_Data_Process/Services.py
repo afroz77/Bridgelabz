@@ -1,11 +1,9 @@
-from builtins import complex
-
-from Week3.Commercial_Data_Process.File_Load import File_Load
+from Week3.Commercial_Data_Process.File_Load import File_Load  # Import File Load Function
 """
     Class Services Do The Following Operations On Company And Also On Customer Data
     1. Add New Customer
     2. Remove Existing Customer
-    3. Add New Comapany
+    3. Add New Company
     4. Remove Existing Company 
     5. Print Company Data
     6. Print Customer Data
@@ -16,7 +14,7 @@ from Week3.Commercial_Data_Process.File_Load import File_Load
 
 
 class Services:        # Class Variables
-    fl = File_Load()   # Object Of File Load Class
+    file_load = File_Load()   # Object Of File Load Class
     c_key = None       # Variable To Store Key
 
     def __init__(self):
@@ -24,8 +22,8 @@ class Services:        # Class Variables
 
     def __init__(self):         # Override The Default Constructor
 
-        self.customer_data = self.fl.Read_json("customer.json")         # Read Customer Data Passing File Name
-        self.company_data = self.fl.Read_json("company.json")           # Read Company Data Passing File Name
+        self.customer_data = self.file_load.Read_json("customer.json")         # Read Customer Data Passing File Name
+        self.company_data = self.file_load.Read_json("company.json")           # Read Company Data Passing File Name
         self.company_keys = list(self.company_data["company"].keys())  # Store Company Keys From Data Using Keys() Fun
         self.customer_keys = list(self.customer_data["customer"].keys())  # Store Customer Keys Customer Data
 
@@ -55,7 +53,7 @@ class Services:        # Class Variables
                         'shares': shares,
                         'price': price,
                     })
-                    if self.fl.Write_json(self.customer_data, "customer.json"):  # Save New Customer Data
+                    if self.file_load.Write_json(self.customer_data, "customer.json"):  # Save New Customer Data
                         print("Customer Added Successfully ")                # If Return True Then Print Message
                         self.c_key = None                                    # Update c_key To None
                         return                                          # Return From The Method
@@ -89,7 +87,7 @@ class Services:        # Class Variables
                         'shares': shares,
                         'price': price,
                     })
-                    if self.fl.Write_json(self.company_data, "company.json"):  # Save The Company Data In Json File
+                    if self.file_load.Write_json(self.company_data, "company.json"): # Save The Company Data In Json File
                         print("Company Added Successfully ")                   # If Return True Then Print Message
                         self.c_key = None                                      # Update c_key To None
                         return                                                 # Return From The Method
@@ -111,7 +109,7 @@ class Services:        # Class Variables
                 if ch.upper() == "Y":
                     print("Record Deleted..")               # Print Message
                     del self.customer_data['customer'][self.c_key]  # Delete The Customer Data From List
-                    self.fl.Write_json(self.customer_data, "customer.json")     # Save Updated Data To The Json
+                    self.file_load.Write_json(self.customer_data, "customer.json")     # Save Updated Data To The Json
                     self.c_key = None                           # Update c_key As None
                 else:
                     print("Cancelled Operation.")
@@ -132,7 +130,7 @@ class Services:        # Class Variables
                 if ch.upper() == "Y":
                     print("Record Deleted..")               # Delete Message
                     del self.company_data['company'][self.c_key]        # Delete The Data From Company List
-                    self.fl.Write_json(self.company_data, "company.json")   # Write Updated Data To Json
+                    self.file_load.Write_json(self.company_data, "company.json")   # Write Updated Data To Json
                     self.c_key = None                               # Update c_key To None
                 else:
                     print("Cancelled Operation.")
@@ -165,13 +163,17 @@ class Services:        # Class Variables
 
     # --------------------- Get Company  Method Return The Company Name As Key----------------------
     def get_company(self, ch):             # Take user choice
-        count = 1                          # Initialize Count
-        for key in self.company_keys:      # Loop Through Keys
-            if count == ch:                # If Choice And Count Match Then Return Than Key
-                return key
-            count += 1                      # Else Update count By 1
-
+        try:
+            count = 1  # Initialize Count
+            if ch > 0:
+                for key in self.company_keys:  # Loop Through Keys
+                    if count == ch:  # If Choice And Count Match Then Return Than Key
+                        return key
+                    count += 1  # Else Update count By 1
+        except ValueError:
+            print("Enter Number Only ")
     # ----------------------- Get Customer Method Return Customer Name as Key----------------------
+
     def get_customer(self, ch):           # Take User Choice
         count = 1                         # Initialize The Count as 1
         for key in self.customer_keys:    # Loop through The Customer Keys
@@ -184,7 +186,6 @@ class Services:        # Class Variables
         1. Buy Shares
         2. Sell Shares
         3. Print Customer Details       
-        
     """
     def Option(self):
         try:
@@ -195,18 +196,37 @@ class Services:        # Class Variables
             print("Enter Valid Input ")             # Print Validation Message
         else:
             if self.checkexist(customer_name, 2):    # Check Customer Exist Or Not If True
-                ch = int(input("\n1. Buy Share\t\t2. Sell Share\t\t3. Print Data\n\nSelect Option : "))
-                if ch == 1:
-                    self.print(1)
-                    ch = int(input("\nSelect Company To Buy: "))
-                    com_name = self.get_company(ch)
-                    self.buy(com_name, customer_name)
-                elif ch == 2:
-                    self.print(1)
-                    ch = int(input("\nSelect Company To Sell: "))
-                    com_name = self.get_company(ch)
-                    self.sell(com_name, customer_name)
-                elif ch == 3:
+                try:
+                    ch = int(input("\n1. Buy Share\t\t2. Sell Share\t\t3. Print Data\n\nSelect Option : "))
+                    if ch > 3:                       # Take Input And Validate Not Greater Than 3
+                        raise ValueError
+                except ValueError:                   # Validation Error
+                    print("Invalid Input Or Invalid Choice ")
+                    self.Option()                    # Call Self
+                    return
+                if ch == 1:                          # If Choice Is 1 Then Go For Buying
+                    self.print(1)                    # Print The Company List
+                    try:                             # Validation For Input
+                        ch = int(input("\nSelect Company To Buy: "))
+                        if ch == 0 or (ch > len(self.company_keys)):   # Validate The Input Should Be Greater Than 0
+                            raise ValueError        # Raise Value Error
+                    except ValueError:
+                        print("Invalid Input Or Invalid Choice ")
+                        self.Option()               # Call Self
+                        return                      # Return Current Call
+                    com_name = self.get_company(ch)  # Take Company By Passing Input Choice By
+                    self.buy(com_name, customer_name)       # Call buy() Function
+                elif ch == 2:                       # If Choice Is 2 Then Go For Sell
+                    self.print(1)                   # Print Company List For Selling The Share
+                    try:                            # Validate The User Input
+                        ch = int(input("\nSelect Company To Sell: "))
+                        if ch == 0 or (ch > len(self.company_keys)):     # Check If The Input Is 0 Raise Value Error
+                            raise ValueError
+                    except ValueError:
+                        print("Invalid Input Or Invalid Choice ")    # Print Value Error Message
+                    com_name = self.get_company(ch)      # Get Company Name By Passing Users Choice
+                    self.sell(com_name, customer_name)   # Call Sell Function By Passing Company Name And Customer Name
+                elif ch == 3:                            # If Choice Is 3 Then Simply Print The Customer Data
                     print("\n************************ CUSTOMER DETAILS **************************\n")
                     print("Customer Name \t\t Total Share \t\t Total Amount \t\t Price")
                     print(self.customer_data["customer"][customer_name]['name'], "    \t\t     ",
@@ -219,46 +239,64 @@ class Services:        # Class Variables
             else:
                 print("Not Found")
                 self.Option()
-
+    """
+        The buy() Function Take company Name And Customer Name As Parameters
+        
+    """
     def buy(self, company_name, customer_name):
         try:
-            company_share = int(self.company_data['company'][company_name]['shares'])
-            company_amount = int(self.company_data['company'][company_name]['balance'])
-            customer_amount = int(self.customer_data['customer'][customer_name]['balance'])
-            customer_share = int(self.customer_data['customer'][customer_name]['shares'])
-            company_share_price = int(self.company_data['company'][company_name]['price'])
+            company_share = int(self.company_data['company'][company_name]['shares'])       # Store company share
+            company_amount = int(self.company_data['company'][company_name]['balance'])     # store company amount
+            customer_amount = int(self.customer_data['customer'][customer_name]['balance'])  # store company amount
+            customer_share = int(self.customer_data['customer'][customer_name]['shares'])    # store customer shares
+            company_share_price = int(self.company_data['company'][company_name]['price'])  # store company share price
 
-            shares = int(input("Enter Share To Buy : "))
-        except ValueError:
+            shares = int(input("Enter Share To Buy : "))                    # Take Share Wants To Buy
+        except ValueError:                                              # Except The Error
             print("Enter Numeric Value For Share")
+            self.buy(company_name, customer_name)           # Call Self
             return
-        else:
+        else:                                               # Else Go For Transaction
             shares = int(shares)
-            if shares * company_share_price <= customer_amount and company_share >= shares:
+            # Check If The Customer Amount Is Greater Than Total Amount Of Share And Also
+            # Check Company Have That Much Of Share
+            if shares * company_share_price <= customer_amount and company_share >= shares:  # Condition To Check
+
+                # If Condition Is True Update Company Balance, Company Share, Customer Share, Customer Balance
+
                 self.company_data['company'][company_name]['balance'] = company_amount + int(shares * company_share_price)
                 self.company_data['company'][company_name]['shares'] = company_share - shares
                 self.customer_data['customer'][customer_name]['shares'] = customer_share + shares
                 self.customer_data['customer'][customer_name]['balance'] = customer_amount - int(shares * company_share_price)
                 print("Shares Buy From", company_name, "Cash Deducted By", shares*company_share_price,
                       "Current Share Is", customer_share + shares)
-                self.fl.Write_json(self.company_data, "company.json")
-                self.fl.Write_json(self.customer_data, "customer.json")
-            else:
-                print("Insufficient Cash")
+                self.file_load.Write_json(self.company_data, "company.json")     # Save Updated JSON Data Of Company
+                self.file_load.Write_json(self.customer_data, "customer.json")   # Save Updated JSON Data Of Customer
+            else:                                   # The Condition If False
+                print("Insufficient Cash Or Company Not Have Shares For Sell")          # Then Print Message
 
+    """
+            The sell() Function Take company Name And Customer Name As Parameters
+
+    """
     def sell(self, company_name, customer_name):
         try:
-            company_share = int(self.company_data['company'][company_name]['shares'])
-            company_amount = int(self.company_data['company'][company_name]['balance'])
-            customer_share_price = int(self.customer_data['customer'][customer_name]['price'])
-            customer_amount = int(self.customer_data['customer'][customer_name]['balance'])
-            customer_share = int(self.customer_data['customer'][customer_name]['shares'])
-            shares = int(input("Enter Share To Sell : "))
-        except ValueError:
-            print("Enter Numeric Value For Share")
+            company_share = int(self.company_data['company'][company_name]['shares'])      # Store company share
+            company_amount = int(self.company_data['company'][company_name]['balance'])      # Store company Amount
+            customer_share_price = int(self.customer_data['customer'][customer_name]['price'])  # Store Customer price
+            customer_amount = int(self.customer_data['customer'][customer_name]['balance'])  # Store Customer Amount
+            customer_share = int(self.customer_data['customer'][customer_name]['shares'])   # Store Customer share
+            shares = int(input("Enter Share To Sell : "))                               # Take Input Share Want To Sell
+        except ValueError:                                                          # Validate Input
+            print("Enter Numeric Value For Share")              # Print Validation Message
+            self.sell(company_name, customer_name)              # Call Self
             return
         else:
             shares = int(shares)
+            # Check If The Company Amount Is Greater Than Total Amount Of Share And Also
+            # Check Customer Have That Much Of Share
+            # If Condition Is True Then Go For Sell
+            # Update Both Company And Customer Data
             if shares * customer_share_price <= company_amount and customer_share >= shares:
                 self.company_data['company'][company_name]['balance'] = company_amount - int(shares * customer_share_price)
                 self.company_data['company'][company_name]['shares'] = company_share + shares
@@ -266,30 +304,40 @@ class Services:        # Class Variables
                 self.customer_data['customer'][customer_name]['balance'] = customer_amount + int(shares * customer_share_price)
                 print("Shares Sold To", company_name, "Cash Received", shares * customer_share_price,
                       "Current Balance Is", customer_amount + shares * customer_share_price)
-                self.fl.Write_json(self.company_data, "company.json")
-                self.fl.Write_json(self.customer_data, "customer.json")
+                self.file_load.Write_json(self.company_data, "company.json")   # Save Updated Company Data
+                self.file_load.Write_json(self.customer_data, "customer.json")  # Save Updated Customer Data
             else:
                 print("Insufficient Cash")
 
+    """
+        print() Method Takes 1 Parameter As ch To Check Which Data Get To Print
+        if We Pass 1 The It Will Print Company Data
+        Else Print Customer Data
+         
+    """
     def print(self, ch):
-        if ch == 1:
-            print("\n************************ COMPANY DETAILS **************************\n")
-            print("Company Name \t\t Total Share \t\t Total Amount \t\t Price")
-            count = 0
-            for key in self.company_keys:
-                count += 1
-                print(count, self.company_data["company"][key]['name'], "    \t\t",
-                      self.company_data["company"][key]['shares'], "    \t\t    ",
-                      self.company_data["company"][key]['balance'], " \t\t    ",
-                      self.company_data["company"][key]['price'])
-        else:
-            print("\n************************ CUSTOMER DETAILS **************************\n")
-            print("Customer Name \t\t Total Share \t\t Total Amount \t\t Price")
-            count = 0
-            for key in self.customer_keys:
-                count += 1
-                print(count, self.customer_data["customer"][key]['name'], "    \t\t",
-                      self.customer_data["customer"][key]['shares'], "    \t\t    ",
-                      self.customer_data["customer"][key]['balance'], " \t\t        ",
-                      self.customer_data["customer"][key]['price'])
+        try:
+            if ch == 1:
+                print("\n************************ COMPANY DETAILS **************************\n")
+                print("Company Name \t\t Total Share \t\t Total Amount \t\t Price")
+                count = 0
+                for key in self.company_keys:
+                    count += 1
+                    print(count, self.company_data["company"][key]['name'], "    \t\t",
+                          self.company_data["company"][key]['shares'], "    \t\t    ",
+                          self.company_data["company"][key]['balance'], " \t\t    ",
+                          self.company_data["company"][key]['price'])
+            else:
+                print("\n************************ CUSTOMER DETAILS **************************\n")
+                print("Customer Name \t\t Total Share \t\t Total Amount \t\t Price")
+                count = 0
+                for key in self.customer_keys:
+                    count += 1
+                    print(count, self.customer_data["customer"][key]['name'], "    \t\t",
+                          self.customer_data["customer"][key]['shares'], "    \t\t    ",
+                          self.customer_data["customer"][key]['balance'], " \t\t        ",
+                          self.customer_data["customer"][key]['price'])
+
+        except IndexError:
+            print("Something Went Wring Please Try Again : ", end='')
 

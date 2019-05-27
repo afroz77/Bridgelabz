@@ -4,24 +4,24 @@
       "first_name": "afroz",
       "last_name": "khan",
       "mobile_number": "8626023212",
+      "address": "Abad",
+      "city": "Mbai",
+      "state": "mh",
+      "zip_code": "4310001"
+    },
+    {
+      "first_name": "sahil",
+      "last_name": "khan",
+      "mobile_number": "9566545454",
       "address": "abad",
       "city": "abad",
       "state": "mh",
       "zip_code": "4310001"
     },
     {
-      "first_name": "bfroz",
-      "last_name": "khan",
-      "mobile_number": "8626023212",
-      "address": "abad",
-      "city": "abad",
-      "state": "mh",
-      "zip_code": "4310001"
-    },
-    {
-      "first_name": "cfroz",
-      "last_name": "khan",
-      "mobile_number": "8626023212",
+      "first_name": "meraj",
+      "last_name": "syed",
+      "mobile_number": "9636565656",
       "address": "abad",
       "city": "abad",
       "state": "mh",

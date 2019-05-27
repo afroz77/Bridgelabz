@@ -77,7 +77,9 @@ class linkedlist :
 #   Else Return False
 
     def searchword(self, data):
+        self.display()
         tempnode = self.head
+        print(data)
         while tempnode is not None:
             if tempnode.data == data:
                 return True
@@ -99,15 +101,16 @@ class linkedlist :
 #    This Method Takes Index And Delete The Particular Node At That Index
 
     def delete_by_index(self, index):
-        temp = self.head
-        prev = temp
-        if index == 0:
-            self.head = temp
-        while index > 0:
-            prev = temp
-            temp = temp.next
-            index -= 1
-        prev.next = temp.next
+
+        if index is 0:
+            self.head = self.head.next
+            return
+
+        currentnode = self.head
+        for i in range(index):
+            prevnodenode = currentnode
+            currentnode = currentnode.next
+        prevnodenode.next = currentnode.next
 
 #  This Method Return The Data Of Last Node
 
@@ -126,6 +129,7 @@ class linkedlist :
 # This Method Returns The Data Of The First Method
 
     def pull_first(self):
+
         tempnod = self.head
         if tempnod is None:
             return -1
@@ -160,4 +164,10 @@ class linkedlist :
             count += 1
             tempnode = tempnode.next
         return count
+
+    def get_by_index(self, index):
+        tempnode=self.head
+        for i in range(index):
+            tempnode = tempnode.next
+        return tempnode.data
 

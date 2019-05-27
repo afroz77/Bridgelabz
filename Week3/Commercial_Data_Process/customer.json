@@ -1,16 +1,16 @@
 {
-  "customer":{
+  "customer": {
     "AFROZ": {
       "name": "Afroz",
-      "balance": 2200,
-      "shares": 10,
+      "balance": 200,
+      "shares": 14,
       "price": 20
     },
     "ANIKET": {
       "name": "Aniket",
-      "balance": "123",
-      "shares": "123",
-      "price": "121"
+      "balance": 123,
+      "shares": 123,
+      "price": 121
     }
   }
 }

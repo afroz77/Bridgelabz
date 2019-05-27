@@ -7,7 +7,6 @@ try:
     name = input("Enter Your Name : ")
     fullname = input("Enter Your Full Name : ")
     mobile = input("Enter Your Mobile Number : ")
-
     if not name.isalpha() or not mobile.isdigit() or not len(str(mobile)) == 10:
         raise ValueError
     else:

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "FACEBOOK",
+    "data": {
+      "no_of_share": "1456",
+      "price": "600",
+      "balance": "256400"
+    }
+  },
+  {
+    "name": "GOOGLE",
+    "data": {
+      "no_of_share": "23",
+      "price": "23",
+      "balance": "23"
+    }
+  },
+  {
+    "name": "JIO",
+    "data": {
+      "no_of_share": "23",
+      "price": "23",
+      "balance": "23"
+    }
+  }
+]
