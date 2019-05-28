@@ -1,11 +1,12 @@
 from Week1.Util import insertionsort
-from unittest import *
+from unittest import TestCase
 import unittest
+
 
 class Insertionsort(TestCase):
     try:
         def test_insertionsort_with_possitive_num(self):    # function to test insertion sort with array of +ve numbers
-            result = (insertionsort([12, 5, 45, 78, 1, 0])) # Pass Array To Insertion Sort Function
+            result = (insertionsort([12, 5, 45, 78, 1, 0]))  # Pass Array To Insertion Sort Function
             expected=[0, 1, 5, 12, 45, 78]                  # Initialize Expected as Sorted Array
             self.assertEqual(expected, result)              # Checking result and expected With Equal Function
     except:

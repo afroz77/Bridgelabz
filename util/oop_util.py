@@ -55,6 +55,7 @@ class Cards:
         self.deck = list(itertools.product(self.rank, self.suits))
 
     def DistributeCard(self):
+
         count = 0
         for players in range(1, 5):
             random.shuffle(self.deck)

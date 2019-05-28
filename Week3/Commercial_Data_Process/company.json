@@ -2,15 +2,15 @@
   "company": {
     "GOOGLE": {
       "name": "Google",
-      "balance": 20000,
-      "shares": 200,
+      "balance": 20840,
+      "shares": 194,
       "price": 140,
       "symbol": ""
     },
     "AMAZON": {
       "name": "Amazon",
-      "balance": 40000,
-      "shares": 458,
+      "balance": 40120,
+      "shares": 460,
       "price": 100,
       "symbol": ""
     },
@@ -27,6 +27,12 @@
       "shares": 448,
       "price": 150,
       "symbol": ""
+    },
+    "A": {
+      "name": "A",
+      "balance": "1111",
+      "shares": "11111",
+      "price": "111111"
     }
   }
 }

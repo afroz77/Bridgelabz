@@ -6,6 +6,37 @@
     "no_of_share": 10,
     "total_amount": 200,
     "time": "27/05/2019, 18:20:35"
+  },
+  {
+    "transaction_type": "BUY",
+    "company_name": "GOOGLE",
+    "customer_name": "AFROZ",
+    "no_of_share": 1,
+    "total_amount": 140,
+    "time": "28/05/2019, 09:15:59"
+  },
+  {
+    "transaction_type": "SELL",
+    "company_name": "AMAZON",
+    "customer_name": "AFROZ",
+    "no_of_share": 2,
+    "total_amount": 40,
+    "date_time": "28/05/2019, 09:17:22"
+  },
+  {
+    "transaction_type": "BUY",
+    "company_name": "GOOGLE",
+    "customer_name": "AFROZ",
+    "no_of_share": 2,
+    "total_amount": 280,
+    "date_time": "28/05/2019, 09:43:35"
+  },
+  {
+    "transaction_type": "BUY",
+    "company_name": "GOOGLE",
+    "customer_name": "AFROZ",
+    "no_of_share": 1,
+    "total_amount": 140,
+    "date_time": "28/05/2019, 10:04:33"
   }
-
 ]

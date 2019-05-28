@@ -163,13 +163,14 @@ def IsAnagram1(str1, str2):
 
 
 def sortarraylist(arr):
-
+    try:
         for i in range(len(arr)-1):              # Outer Loop For First Element
             for j in range(i+1, len(arr)):        # Inner Loop For Next Element
                 if arr[i] > arr[j]:
                     arr[i], arr[j] = arr[j], arr[i]  # Swapping Array element
         return arr
-
+    except :
+        print("Error : Invalid Type Array")
 
 # ------------------------------------ Sort String ----------------------------------------- #
 
@@ -185,7 +186,9 @@ def sortstring(str):
     print(str)
     return str
 
+
 # -------------------------------------  Bubble Sort  ----------------------------------------- #
+
 def bubble_sort(arr):
 
     for i in range(len(arr) - 1):
@@ -205,12 +208,12 @@ def binarysearch(l, r, val, arr):
         while l <= r:
             middle = (l + r) // 2
             if arr[middle] == val:
-                return middle
+                return True
             elif arr[middle] < val:
                 l = middle + 1
             else:
                 r = middle - 1
-        return 1
+        return False
 
 # -------------------------------- Insertion Sort ---------------------------------------- #
 
@@ -334,13 +337,16 @@ def CalcPayment(P, Y, R):
 
 
 def Decimal_To_Binary(num):
-
-    res=''
-    while num != 0:
-        rem = num % 2       # Reminder
-        num = num // 2
-        res += str(rem)     # Append Reminder To String
-    return res[::-1]        # Reverse The String And Return It
+    try:
+        res = ''
+        num = int(num)
+        while num != 0:
+            rem = num % 2  # Reminder
+            num = num // 2
+            res += str(rem)  # Append Reminder To String
+        return res[::-1]  # Reverse The String And Return It
+    except ValueError:
+        print("Invalid Value")
 
 
 def to_decimal(number):

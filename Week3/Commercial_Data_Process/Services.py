@@ -1,4 +1,8 @@
+from itertools import combinations_with_replacement
+
 from Week3.Commercial_Data_Process.File_Load import File_Load  # Import File Load Function
+from Week3.Commercial_Data_Process.TransactionWithQueue import TransactionQueue
+from Week3.Commercial_Data_Process.TransactionStack import TransactionStack
 """
     Class Services Do The Following Operations On Company And Also On Customer Data
     1. Add New Customer
@@ -13,8 +17,10 @@ from Week3.Commercial_Data_Process.File_Load import File_Load  # Import File Loa
 """
 
 
-class Services:        # Class Variables
+class Services():        # Class Variables
     file_load = File_Load()   # Object Of File Load Class
+    transaction_queue = TransactionQueue()
+    transaction_stack = TransactionStack()
     c_key = None       # Variable To Store Key
 
     def __init__(self):
@@ -272,7 +278,20 @@ class Services:        # Class Variables
                       "Current Share Is", customer_share + shares)
                 self.file_load.Write_json(self.company_data, "company.json")     # Save Updated JSON Data Of Company
                 self.file_load.Write_json(self.customer_data, "customer.json")   # Save Updated JSON Data Of Customer
-            else:                                   # The Condition If False
+
+                # BUY Transaction Add And Save In The Queue
+
+                self.transaction_queue.AddTransaction("BUY", company_name, customer_name, shares,    # Add Transaction
+                                                      int(shares*company_share_price))
+                self.transaction_queue.SaveTransaction()                                # Save Transaction
+
+                # Buy Transaction Add And Save In The Stack
+
+                self.transaction_stack.AddTransaction("BUY", company_name, customer_name, shares,   # Add Transaction
+                                                      int(shares * company_share_price))
+
+                self.transaction_stack.SaveTransaction()                # Save Transaction
+            else:
                 print("Insufficient Cash Or Company Not Have Shares For Sell")          # Then Print Message
 
     """
@@ -306,6 +325,18 @@ class Services:        # Class Variables
                       "Current Balance Is", customer_amount + shares * customer_share_price)
                 self.file_load.Write_json(self.company_data, "company.json")   # Save Updated Company Data
                 self.file_load.Write_json(self.customer_data, "customer.json")  # Save Updated Customer Data
+
+                # Sell Transaction Add And Save In The Queue
+
+                self.transaction_queue.AddTransaction("SELL", company_name, customer_name, shares,
+                                                       int(shares * customer_share_price))
+                self.transaction_queue.SaveTransaction()
+
+                # Sell Transaction Add And Save In The Stack
+
+                self.transaction_stack.AddTransaction("SELL", company_name, customer_name, shares,
+                                                      int(shares * customer_share_price))
+                self.transaction_stack.SaveTransaction()
             else:
                 print("Insufficient Cash")
 
@@ -340,4 +371,7 @@ class Services:        # Class Variables
 
         except IndexError:
             print("Something Went Wring Please Try Again : ", end='')
+
+    def Save(self):
+        self.SaveTransaction()
 
